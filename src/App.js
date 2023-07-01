@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Header } from './Components/Header';
+import { ScrollBar } from './Components/ScrollBar';
+import { Router } from './Config/Router';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header/>
+    <div className='max-w-[1100px] w-full mx-auto mt-20 py-5'>
+      <ScrollBar/>
+      <Router/>
     </div>
+    </>
   );
 }
 
